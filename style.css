@@ -13,6 +13,11 @@ body{
    background-color: lightblue;
 }
 
+h2{
+   font-family: 'Montserrat', sans-serif;
+   margin-bottom: 35px;
+}
+
 .talk{
    width: 400px;
    height: 350px;
@@ -30,3 +35,4 @@ body{
    font-family: 'Montserrat', sans-serif;
    margin-top: 35px;
 }
+
