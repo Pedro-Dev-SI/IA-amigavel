@@ -2,7 +2,7 @@ const button = document.querySelector('.talk');
 const content = document.querySelector('.content');
 
 const hello = [
-   'Olá!! Você pode interagir comigo falando as seguintes frases: Como está você, Como está o clima e Qual o seu nome.'
+   'Olá!! Você pode interagir comigo falando as seguintes frases: Como está você, Como está o clima e Qual é o seu nome.'
 ]
 
 const greetings = [
@@ -21,7 +21,7 @@ const weather = [
 
 const extraSpeeches = [
    'Não entendi o que você falou',
-   'As perguntas válidas que você pode fazer para mim são: Como está você e Como está o clima hoje.'
+   'As perguntas válidas que você pode fazer para mim são: Como está você, Como está o clima hoje e Qual é o seu nome.'
 ]
 
 
@@ -58,7 +58,7 @@ function readOutLoud(message){
    }else if(message.includes('Olá')){
       const finalSpeech = hello[Math.floor(Math.random() * hello.length)]
       speech.text = finalSpeech;
-   }else if(message.includes('Qual o seu nome')){
+   }else if(message.includes('Qual é o seu nome')){
       speech.text = 'Me chamo Máquina de Combate';
    }else{
       const finalSpeech = extraSpeeches[Math.floor(Math.random() * extraSpeeches.length)]
